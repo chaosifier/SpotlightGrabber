@@ -28,4 +28,4 @@ SpotlightGrabber.exe
 >Grabs and stores spotlight images above the default 200KB size mark in temporary directory and sets the largest one as wallpaper.
 
 
-#### <a href="https://github.com/chaosifier/SpotlightGrabber/blob/master/SpotlightGrabber/bin/Release/SpotlightGrabber.exe">Download SpotlightGrabber.exe</a>
+#### <a href="https://github.com/chaosifier/SpotlightGrabber/raw/master/SpotlightGrabber/bin/Release/SpotlightGrabber.exe">Download SpotlightGrabber.exe</a>
