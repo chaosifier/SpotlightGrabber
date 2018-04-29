@@ -28,4 +28,18 @@ SpotlightGrabber.exe
 >Grabs and stores spotlight images above the default 200KB size mark in temporary directory and sets the largest one as wallpaper.
 
 
-#### <a href="https://github.com/chaosifier/SpotlightGrabber/raw/master/SpotlightGrabber/bin/Release/SpotlightGrabber.exe">Download SpotlightGrabber.exe</a>
+#### What the app to run every time you unlock your screen and have your wallpeper updated? Follow the steps to create a Task Schedule to do exactly the same:
+1. Open Task Scheduler (Run "taskschd.msc")
+2. Create a New Task and give it a meaningful name, like "Spotlight Grabber"
+3. Under Triggers, add a new Trigger and under Begin the task, select On workstation unlock.. Save and close the trigger window.
+4. Under Actions, add a new Action. Select Start a program under Action and browse to the location of SpotlightGrabber.exe.
+5. Add arguments as required, e.g. c:\SpotlightImages 500 yes
+6. Press ok and exit New Action window.
+7. Under Conditions, remove Start the task only if the computer is on AC power. (optional)
+Open Task Scheduler (Run > "taskschd.msc").
+8. Press OK and you're all set up.
+
+Now everytime you unlock your screen and new Spotlight image is available, it will automatically be saved to your specified diretory and the wallpeper will be set to the largest version of spotlight image.
+
+
+### <a href="https://github.com/chaosifier/SpotlightGrabber/raw/master/SpotlightGrabber/bin/Release/SpotlightGrabber.exe">Download SpotlightGrabber.exe</a>
