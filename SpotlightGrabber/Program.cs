@@ -71,6 +71,7 @@ namespace SpotlightGrabber
 
             Console.WriteLine("Operation completed.");
 
+
             Console.ReadLine();
         }
 
