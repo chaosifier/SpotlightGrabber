@@ -57,6 +57,7 @@ namespace SpotlightGrabber
             if (_savedCounter == 0)
             {
                 Console.WriteLine("No new files found.");
+                GetImageFromLoremPicsumAndSetAsWallpaper("https://picsum.photos/1920/1080");
             }
             else
             {
@@ -73,6 +74,21 @@ namespace SpotlightGrabber
 
 
             Console.ReadLine();
+        }
+
+        private static void GetImageFromLoremPicsumAndSetAsWallpaper(string url)
+        {
+            try
+            {
+                Console.WriteLine("Since no new files were found, falling back to https://picsum.photos/");
+                SetImageAsWallpaper(url);
+                Console.WriteLine("Wallpaper changed successfully.");
+            }
+            //since this is a remote url, connection error might occur
+            catch (Exception)
+            {
+                Console.WriteLine("unable to get resource from https://picsum.photos/");
+            }
         }
 
         public static string GetSpotlightFilesDirectory()
